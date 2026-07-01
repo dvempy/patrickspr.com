@@ -25,6 +25,14 @@
         "name": "Patrick's PR",
         "url": "https://patrickspr.com/",
         "email": "hello@patrickspr.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1460 Broadway",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "postalCode": "10036",
+          "addressCountry": "US"
+        },
         "description": "Strategic communications for consumer brands and selected projects.",
         "areaServed": "International"
       }
@@ -97,16 +105,31 @@
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-inner">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">For project inquiries, send a note.</h2>
-          <a class="email-link" href="mailto:hello@patrickspr.com">hello@patrickspr.com</a>
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">For project inquiries, send a note.</h2>
+          </div>
+          <div class="contact-details">
+            <a class="email-link" href="mailto:hello@patrickspr.com">hello@patrickspr.com</a>
+            <address>
+              1460 Broadway<br>
+              New York, NY 10036
+            </address>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>Patrick's PR</span>
-      <a href="mailto:hello@patrickspr.com">hello@patrickspr.com</a>
+      <div class="footer-meta">
+        <span>Patrick's PR</span>
+        <address>1460 Broadway, New York, NY 10036</address>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="mailto:hello@patrickspr.com">Contact</a>
+      </nav>
     </footer>
   </body>
 </html>

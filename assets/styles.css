@@ -248,11 +248,23 @@ h3 {
   max-width: 11ch;
 }
 
+.contact-details {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.contact-details address,
+.footer-meta address {
+  color: var(--muted);
+  font-style: normal;
+}
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0.75rem;
+  gap: 1rem;
   padding: 1.25rem 0;
   color: var(--muted);
   font-size: 0.95rem;
@@ -262,6 +274,44 @@ h3 {
 .site-footer a {
   color: var(--ink);
   text-decoration: none;
+}
+
+.footer-meta,
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+}
+
+.footer-links {
+  justify-content: flex-end;
+}
+
+.legal-page {
+  width: min(100% - 2rem, 760px);
+  margin: 0 auto;
+  padding: 3.5rem 0;
+}
+
+.legal-page h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2.25rem, 8vw, 3.4rem);
+}
+
+.legal-page h2 {
+  margin-top: 2.25rem;
+  font-size: clamp(1.2rem, 3.4vw, 1.55rem);
+  line-height: 1.15;
+}
+
+.legal-page p,
+.legal-page li {
+  color: var(--ink-soft);
+}
+
+.legal-page ul {
+  padding-left: 1.2rem;
 }
 
 @media (min-width: 680px) {
@@ -299,13 +349,13 @@ h3 {
     padding: 4.5rem 0;
   }
 
-  .contact-inner .eyebrow,
-  .contact-inner h2 {
-    grid-column: 1;
+  .contact-details {
+    grid-column: 2;
+    min-width: 17rem;
+    justify-items: start;
   }
 
-  .contact-inner .email-link {
-    grid-column: 2;
-    grid-row: 1 / span 2;
+  .legal-page {
+    width: min(100% - 3rem, 760px);
   }
 }
