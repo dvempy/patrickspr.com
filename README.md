@@ -6,7 +6,7 @@ Static website for `patrickspr.com`, built for GitHub Pages.
 
 - Fast static HTML and CSS
 - Mobile-first layout
-- Optimized local WebP assets
+- No client imagery or logos included yet
 - Custom domain file for `patrickspr.com`
 - Basic SEO metadata, `robots.txt`, and `sitemap.xml`
 
